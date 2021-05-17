@@ -1,0 +1,914 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+.navbar {
+  background-color: #02304700;
+  /*     Navbar transparente aqui */
+}
+
+.nav-logo img {
+  width: 50%;
+  height: auto;
+  padding-left: 20px;
+}
+
+.nav-menu ul {
+  display: flex;
+}
+
+.nav-menu ul a {
+  margin: 25px;
+  color: white;
+  font-size: 1.8rem;
+}
+
+.nav-menu ul li {
+  padding: 10px 0;
+  border-radius: 50px;
+}
+
+.nav-menu ul li:hover {
+  background-color: #0077ff;
+  transition: all 1s;
+}
+
+.nav-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 10px 0;
+}
+
+.nav-wrapper::after {
+  content: "";
+  width: 80vw;
+  position: absolute;
+  height: 0.8px;
+  background-color: white;
+
+  top: 75px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+
+
+
+
+
+
+
+
+.slider {
+  position: relative;
+  max-width: auto;
+  bottom: 90px;
+  height: 75rem;
+  z-index: -1;
+  background: linear-gradient(120deg, #0077ff94, #3d3d3d),
+    url(img/smiling-student.jpg);
+  background-size: cover;
+}
+
+.text-slider{
+  position: absolute;
+  top: 55%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+}
+
+.text-slider h1{
+  text-transform: uppercase;
+  color: white;
+  font-size: 5rem;
+}
+.text-slider h2{
+  text-align: left;
+  text-transform: uppercase;
+  color: white;
+  font-size: 2rem;
+}
+
+.custom-shape-divider-bottom-1620088506 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1620088506 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 150px;
+}
+
+.custom-shape-divider-bottom-1620088506 .shape-fill {
+  fill: #ffffff;
+}
+
+/* Objetos acima do slider, botões e items animados */
+.next-section {
+  color: white;
+  font-size: 4rem;
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  animation: next-section-icon 3s infinite;
+}
+
+@keyframes next-section-icon {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(25px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.btn-inscricao {
+  background-color: #0077ff;
+
+  border-radius: 50px;
+  padding: 10px 20px;
+
+  position: absolute;
+  top: 85%;
+  left: 51%;
+  transform: translate(-50%, -50%);
+}
+
+.btn-inscricao a {
+  color: white;
+  font-size: 1.8rem;
+}
+/* Objetos acima do slider, botões e items animados */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Referente ao texto da primeira parte do section */
+
+.section1 .text-title1{
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 50px 20px;
+}
+
+.section1 .text-title1 h1 {
+  color: #0077ff;
+  text-transform: uppercase;
+  font-size: 4rem;
+}
+
+.section1 .text-title1 h3{
+  color: #0077ff;
+  font-size: 2.5rem;
+  text-align: left;
+}
+
+.section1 .text-title2{
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 50px 20px;
+}
+
+.section1 .text-title2 h2{
+  color: #0077ff;
+  text-align: left;
+}
+
+.section1 .text-title2-wrapper{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.section1 .text-title2-wrapper div:nth-child(1){
+  width: 550px;
+
+}
+
+.section1 .text-title2-wrapper div:nth-child(2){
+  width: 430px;
+
+}
+
+.section1 .text-title2-wrapper > div p{
+  border-left: 5px solid #0077ff;
+  padding: 10px;
+}
+
+
+
+
+
+
+.section2 .text-title1{
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 100px 20px;
+}
+
+.section2 .text-title1 h1{
+  color: #0077ff;
+  text-transform: uppercase;
+  font-size: 4rem;
+  text-align: right;
+}
+
+.section2 .text-title1 h3{
+  color: #0077ff;
+  font-size: 2.5rem;
+  text-align: right;
+}
+
+.section2 .text-title2{
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 50px 20px;
+}
+
+.section2 .text-title2 h2{
+  color: #0077ff;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+.flex-motivos{
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+
+
+/* .motivos-card1::before, .motivos-card2::before, .motivos-card3::before{
+  content: '';
+  width: 350px;
+  height: 100px;
+  background-color: #3d3d3d;
+  position: absolute;
+  bottom: 0;
+  border-radius: 5px;
+} */
+
+.motivos-card1::after{
+  content: 'EXCELÊNCIA';
+  color: white;
+  font-weight: bolder;
+  font-size: 10rem;
+  opacity: 0.1;
+  writing-mode: vertical-rl;
+  position: absolute;
+  left: 13%;
+  top: 85%;
+  transform: translate(-50%, -50%);
+}
+.motivos-card2::after{
+  content: 'ESTRUTURA';
+  color: white;
+  font-weight: bolder;
+  font-size: 10rem;
+  opacity: 0.1;
+  writing-mode: vertical-rl;
+  position: absolute;
+  left: 13%;
+  top: 82%;
+  transform: translate(-50%, -50%);
+}
+.motivos-card3::after{
+  content: 'EVENTOS';
+  color: white;
+  font-weight: bolder;
+  font-size: 10rem;
+  opacity: 0.1;
+  writing-mode: vertical-rl;
+  position: absolute;
+  left: 13%;
+  top: 70%;
+  transform: translate(-50%, -50%);
+}
+
+
+#flex-motivos-title1{
+  color: #3d3d3d;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 4rem;
+}
+#flex-motivos-title2{
+  color: #3d3d3d;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 7rem;
+}
+
+
+.motivos-card1{
+  width: 350px;
+  height: 550px;
+
+  background: linear-gradient(180deg, #3d3d3d, #3d3d3dea, #0077ff00), url(img/finom-campus.jpg);
+  background-size: cover;
+  border-radius: 5px;
+  margin: 5px;
+  position: relative;
+  transition: all 1s;
+}
+
+.motivos-card1:hover{
+  background: linear-gradient(180deg, #3d3d3d, #3d3d3df2, #0077ffbd), url(img/finom-campus.jpg);
+  background-size: cover;
+}
+
+.motivos-card2{
+  width: 350px;
+  height: 550px;
+
+  background: linear-gradient(180deg, #3d3d3d, #3d3d3dea, #0077ff00), url(img/infra2.jpeg);
+  background-size: cover;
+  border-radius: 5px;
+  margin: 5px;
+  position: relative;
+}
+
+.motivos-card2:hover{
+  background: linear-gradient(180deg, #3d3d3d, #3d3d3df2, #0077ffbd), url(img/infra2.jpeg);
+  background-size: cover;
+}
+
+.motivos-card3{
+  width: 350px;
+  height: 550px;
+
+  background: linear-gradient(180deg, #3d3d3d, #3d3d3dea, #0077ff00), url(img/events.jpg);
+  background-size: cover;
+  border-radius: 5px;
+  margin: 5px;
+  position: relative;
+}
+
+.motivos-card3:hover{
+  background: linear-gradient(180deg, #3d3d3d, #3d3d3df2, #0077ffbd), url(img/events.jpg);
+  background-size: cover;
+}
+
+
+
+/* OBSERVAÇÕES
+
+Adicionar animation out no hover do cards da primeira section - http://jsfiddle.net/JjHNG/35/
+Arrumar flexbox do passos da inscrição online 
+Colocar outline nos números de trás em passos da inscrição - https://jsfiddle.net/yijiang/UCjgg/
+Adicionar outline em alguns elementos
+Verificar se pode mudar o esquema de cores
+Substituir lottiefile por imagem estática */
+
+
+/* verificar https://www.svgator.com/ */
+/* https://codepen.io/mustbebuilt/pen/Caknd?editors=0100 */
+
+
+.cards-motivos > p{
+  padding: 30px;
+  color: white;
+}
+
+.cards-motivos > h1{
+  color: white;
+  padding-top: 30px;
+  text-align: center;
+}
+
+.cards-motivos > a{
+  color: white;
+  text-transform: uppercase;
+  position: absolute;
+  bottom: 4.5%;
+  font-weight: bolder;
+  left: 50%;
+  transform: translate(-50%);
+  border: 1px solid #ffffff;
+  padding: 15px 10px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.cards-motivos::before > a{
+
+}
+
+.cards-motivos > img{
+  width: 300px;
+  position: absolute;
+  left: 60%;
+  top: 62.45%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+
+.cards-motivos:hover > img{
+  animation-name: motivos-card-img-animation;
+  animation-fill-mode: forwards;
+  animation-duration: 2s;
+}
+
+@keyframes motivos-card-img-animation {
+  0%{
+    left: 60%;
+    opacity: 0;
+  }
+  100%{
+    left: 72%;
+    opacity: 1;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+.section1 .flex-wrapper {
+  position: relative;
+
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 20px 20px 60px;
+}
+
+.flexbox-vantagens {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+  flex-basis: auto;
+  flex-wrap: wrap;
+}
+
+/* Criação dos cards */
+.flexbox-vantagens .card1,
+.card2,
+.card3,
+.card4 {
+  width: 180px;
+  height: 180px;
+  padding: 15px;
+  border-radius: 100px;
+
+  display: flex;
+  align-content: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+/* Criação dos cards */
+
+
+
+/* Estilização dos cards */
+.flexbox-vantagens .card1 {
+  background: linear-gradient(120deg, #0077ff, #3d3d3d85),
+    url(img/cheerful-person1.jpg);
+  background-size: cover;
+  position: relative;
+  margin: 30px 30px;
+}
+
+.flexbox-vantagens .card2 {
+  background: linear-gradient(60deg, #0077ff, #3d3d3d85),
+    url(img/finom-campus.jpg);
+  background-size: cover;
+  position: relative;
+  margin: 30px 30px;
+}
+
+.flexbox-vantagens .card3 {
+  background: linear-gradient(120deg, #0077ff, #3d3d3d85),
+    url(img/finom-campus.jpg);
+  background-size: cover;
+  position: relative;
+  margin: 30px 30px;
+}
+
+.flexbox-vantagens .card4 {
+  background: linear-gradient(60deg, #0077ff, #3d3d3d85),
+    url(img/cheerful-person1.jpg);
+  background-size: cover;
+  position: relative;
+  margin: 30px 30px;
+}
+/* Estilização dos cards */
+
+
+
+/* Números presentes nos cards */
+.flexbox-vantagens .card1::after {
+  content: "1";
+  color: rgba(255, 255, 255, 0.15);
+  font-size: 25rem;
+  position: absolute;
+  left: 85px;
+  bottom: -45px;
+  font-family: "Anton", sans-serif;
+}
+.flexbox-vantagens .card1::before {
+  content: "1";
+  color: #0077ff15;
+  font-size: 25rem;
+  position: absolute;
+  left: 85px;
+  bottom: -45px;
+  font-family: "Anton", sans-serif;
+  z-index: -1;
+
+}
+.flexbox-vantagens .card2::after {
+  content: "2";
+  color: rgba(255, 255, 255, 0.15);
+  font-size: 25rem;
+  position: absolute;
+  left: 85px;
+  bottom: -45px;
+  font-family: "Anton", sans-serif;
+}
+.flexbox-vantagens .card2::before {
+  content: "2";
+  color: #0077ff15;
+  font-size: 25rem;
+  position: absolute;
+  left: 85px;
+  bottom: -45px;
+  font-family: "Anton", sans-serif;
+  z-index: -1;
+}
+.flexbox-vantagens .card3::after {
+  content: "3";
+  color: rgba(255, 255, 255, 0.15);
+  font-size: 25rem;
+  position: absolute;
+  left: 85px;
+  bottom: -45px;
+  font-family: "Anton", sans-serif;
+}
+.flexbox-vantagens .card3::before {
+  content: "3";
+  color: #0077ff15;
+  font-size: 25rem;
+  position: absolute;
+  left: 85px;
+  bottom: -45px;
+  font-family: "Anton", sans-serif;
+  z-index: -1;
+}
+.flexbox-vantagens .card4::after {
+  content: "4";
+  color: rgba(255, 255, 255, 0.15);
+  font-size: 25rem;
+  position: absolute;
+  left: 85px;
+  bottom: -45px;
+  font-family: "Anton", sans-serif;
+}
+.flexbox-vantagens .card4::before {
+  content: "4";
+  color: #0077ff15;
+  font-size: 25rem;
+  position: absolute;
+  left: 85px;
+  bottom: -45px;
+  font-family: "Anton", sans-serif;
+  z-index: -1;
+}
+/* Números presentes nos cards */
+
+
+
+/* Adiciona a seta e animação ao realizar hover aos cards */
+.card1:hover::before,
+.card2:hover::before,
+.card3:hover::before{
+  content: "";
+  color: #0077ff;
+  content: "\f0a9";
+  font-weight: 900;
+  font-size: 3.5rem;
+  font-family: "Font Awesome 5 Free";
+
+  position: absolute;
+  top: 50%;
+  left: 110%;
+  transform: translate(-50%, -50%);
+
+  transition: 0.5s;
+  animation-name: next-card-arrow;
+  animation-fill-mode: forwards;
+  animation-duration: 1.5s;
+}
+@keyframes next-card-arrow {
+  0% {
+    transform: translateX(-20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+/* Adiciona a seta e animação ao realizar hover aos cards */
+
+.flexbox-vantagens .card1 p,
+.card2 p,
+.card3 p,
+.card4 p {
+  color: #333333;
+  position: absolute;
+  top: 220px;
+  text-align: center;
+}
+
+.flexbox-vantagens .card1 h1,
+.card2 h1,
+.card3 h1,
+.card4 h1 {
+  font-size: 6.5rem;
+  text-align: center;
+  color: #ffffff;
+  padding-bottom: 10px;
+}
+
+.flexbox-vantagens .card1:hover h1,
+.card2:hover h1,
+.card3:hover h1,
+.card4:hover h1 { 
+  transform: scale(1.3);
+  transition: all 1s;
+}
+
+/* https://lottiefiles.com/marketplace/collegeschool-icons-pack
+https://lottiefiles.com/59446-black-guy-animation
+https://lottiefiles.com/48939-computer-background */
+
+
+
+.grid-materiais{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: minmax(300px, auto);
+
+  row-gap: 20px;
+  column-gap: 20px;
+  grid-template-areas: 
+  "a b f"
+  "d e f";
+}
+
+.grid-materiais-wrapper{
+  position: relative;
+
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 20px 20px 60px;
+}
+
+.grid-materiais .lottiefiles1{
+  grid-area: f;
+  background-color: rgb(255, 255, 255);
+
+  position: relative;
+  border-radius: 5px;
+  display: grid;
+  align-items: center;
+}
+
+
+
+/* -------------------------------------------------------- */
+/* Adiciona o ícone do PDF ao fundo do grid */
+.materiais-e::before{
+  content: "";
+  color: #ffffff;
+  content: "\f1c1";
+  font-weight: 900;
+  font-size: 30rem;
+  font-family: "Font Awesome 5 Free";
+  opacity: 0.1;
+  position: absolute;
+  top: 5%;
+  left: 35%;
+  transform: translate(-50%, -50%);
+  transform: rotate(-30deg);
+  z-index: 0;
+  transition: all .5s;
+}
+.materiais-e::after{
+  content: '';
+  width: 250px;
+  height: 1px;
+  background-color: white;
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  transform: translate(-50%, -50%);
+}
+.materiais-e:hover::before{
+  transform: rotate(0deg);
+  opacity: 0.20;
+}
+.grid-materiais .materiais-e{
+  grid-area: b;
+  background: linear-gradient(200deg, #0077ff, #3d3d3dda);
+
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+}
+/* Adiciona o ícone do PDF ao fundo do grid */
+/* -------------------------------------------------------- */
+
+/* -------------------------------------------------------- */
+/* Adiciona o ícone do PDF ao fundo do grid */
+.materiais-m::before{
+  content: "";
+  color: #ffffff;
+  content: "\f1c1";
+  font-weight: 900;
+  font-size: 30rem;
+  font-family: "Font Awesome 5 Free";
+  opacity: 0.1;
+  position: absolute;
+  top: 10%;
+  left: 35%;
+  transform: translate(-50%, -50%);
+  transform: rotate(-30deg);
+  z-index: 0;
+  transition: all .5s;
+}
+.materiais-m::after{
+  content: '';
+  width: 250px;
+  height: 1px;
+  background-color: white;
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  transform: translate(-50%, -50%);
+}
+.materiais-m:hover::before{
+  transform: rotate(0deg);
+  opacity: 0.20;
+}
+.grid-materiais .materiais-m{
+  grid-area: d;
+  background: linear-gradient(120deg, #0077ff, #3d3d3d);
+
+  position: relative;
+  border-radius: 5px;
+}
+/* Adiciona o ícone do PDF ao fundo do grid */
+/* -------------------------------------------------------- */
+
+
+/* Alterar propriedades especificas de componentes do .grid-materiais */
+.grid-materiais .materiais-f h4{
+  border-left: none;
+  padding: 0px 10px 10px 0px;
+  color: #333333;
+}
+
+.grid-materiais .materiais-t{
+  grid-area: a;
+
+}
+
+.grid-materiais .materiais-t p{
+  color: #333333;
+  padding: 10px;
+  border-left: 5px solid #0077ff;
+}
+
+.grid-materiais .materiais-f{
+  grid-area: e;
+  position: relative;
+}
+
+.grid-materiais .materiais-f a{
+  border-radius: 50px;
+  padding: 10px 15px;
+  color: #ffffff;
+  background: linear-gradient(190deg, #0077ff, #014592);
+
+  text-transform: uppercase;
+  font-weight: bold;
+  position: absolute;
+  bottom: 3%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/* Alterar propriedades especificas de componentes do .grid-materiais */
+
+
+/* Altera propriedades de vários elementos dentro de .grid-materiais */
+.grid-materiais > div h3{
+  text-transform: uppercase;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+}
+
+.grid-materiais > div a{
+  border-radius: 50px;
+  padding: 10px 15px;
+  color: #0077ff;
+  background: linear-gradient(190deg, #ffffff, #cfcfcf);
+
+  text-transform: uppercase;
+  font-weight: bold;
+  position: absolute;
+  bottom: 3%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+
+.grid-materiais > div p{
+  color: #ffffff;
+  padding: 35px;
+}
+
+.grid-materiais > div h1{
+  color: #0077ff;
+  text-transform: uppercase;
+  padding: 10px 0;
+  font-size: 4rem;
+}
+
+.grid-materiais > div h4{
+  color: #0050ac;
+  padding: 0 10px;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  border-left: 5px solid #0077ff;
+}
+/* Altera propriedades de vários elementos dentro de .grid-materiais */
+
